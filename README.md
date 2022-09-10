@@ -1,11 +1,11 @@
 Spring Boot Rest APIs
 
-Users can register using Mobile Number.
-Users may have multiple roles (ADMINS,CUSTOMERS).
-Admin can create, delete, update and read products (Any product) under (Any Category). 
-Customers can only have the list of products.
-Admin route cannot be accessed by Customers 
-Used of JWT Token.
+1.Users can register using Mobile Number.
+2.Users may have multiple roles (ADMINS,CUSTOMERS).
+3.Admin can create, delete, update and read products (Any product) under (Any Category). 
+4.Customers can only have the list of products.
+5.Admin route cannot be accessed by Customers 
+6.Used of JWT Token.
 
 
 1. /authenticate
