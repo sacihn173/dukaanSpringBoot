@@ -16,6 +16,7 @@ Spring Boot Rest APIs
 1. /authenticate
 
 --> Recieve username and password and authenticate it and generate a Jwt for it.
+
 --> When calling other APIs this Jwt Token is sent in the header and based on it Authorization is given to customer(ADMIN OR USER).
 
 2. /register
