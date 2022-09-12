@@ -32,7 +32,7 @@ Authentication :
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/73626851/189494961-ad3504cf-5161-4777-a4c1-62ccf762a385.png">
 
-Deletion based on Jwt Authentication : 
+Deletion based on Jwt Token : 
 
 <img width="618" alt="image" src="https://user-images.githubusercontent.com/73626851/189495010-b168fe71-5a6e-465f-b0e9-6d7f1a9bf079.png">
 
