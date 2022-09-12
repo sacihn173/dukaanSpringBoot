@@ -10,7 +10,7 @@ Spring Boot Rest APIs
 
 5.Admin route cannot be accessed by Customers.
 
-6.Used of JWT Token.
+6.Used JWT Tokens.
 
 
 1. /authenticate
