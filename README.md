@@ -1,39 +1,12 @@
-Spring Boot Rest APIs
+#Dukan#
 
-1.Users can register using Mobile Number.
+A single seller - multi customer application. Functionalities related to User, Product and Order.
+Functionality to generate relevant products feed page for Customer. 
+Functionality to generate Trending Products page.
 
-2.Users may have multiple roles (ADMINS,CUSTOMERS).
-
-3.Admin can create, delete, update and read products (Any product) under (Any Category). 
-
-4.Customers can only have the list of products.
-
-5.Admin route cannot be accessed by Customers.
-
-6.Used JWT Tokens.
+![image](https://github.com/sacihn173/dukaanSpringBoot/assets/73626851/1a9f0b88-98d2-4dc1-a9e7-367b9fb66c48)
 
 
-1. /authenticate
+Schema :
 
---> Recieve username and password and authenticate it and generate a Jwt for it.
-
---> When calling other APIs this Jwt Token is sent in the header and based on it Authorization is given to customer(ADMIN OR USER).
-
-2. /register
-3. /create
-4. /read/{id}
-5. /read/{category}
-6. /delete/{id}
-7. /update
-
---> All passwords are stored and consumed with Base64 encoding.
-
-Authentication : 
-
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/73626851/189494961-ad3504cf-5161-4777-a4c1-62ccf762a385.png">
-
-Deletion based on Jwt Token : 
-
-<img width="618" alt="image" src="https://user-images.githubusercontent.com/73626851/189495010-b168fe71-5a6e-465f-b0e9-6d7f1a9bf079.png">
-
-
+![image](https://github.com/sacihn173/dukaanSpringBoot/assets/73626851/38dcb938-60eb-4649-a687-2643e9528df6)
