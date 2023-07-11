@@ -1,10 +1,9 @@
-package com.productDetails.model;
+package com.productDetails.product;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Table;
-import javax.persistence.Id;
+import com.productDetails.order.Order;
+
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "product_details")
@@ -15,6 +14,9 @@ public class Product {
     private int productId;
     private int productPrice;
     private String productCategory;
+
+    @OneToMany(mappedBy = "product", fetch = FetchType.LAZY)
+    private List<Order> orders;
 
     public Product(){
 
@@ -47,5 +49,13 @@ public class Product {
 
     public void setProductCategory(String productCategory) {
         this.productCategory = productCategory;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
     }
 }

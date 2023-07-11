@@ -1,18 +1,10 @@
 package com.productDetails.service;
 
-import com.productDetails.model.AuthenticationRequest;
-import com.productDetails.model.AuthenticationResponse;
-import com.productDetails.model.Product;
-import com.productDetails.model.User;
-import com.productDetails.repository.ProductRepo;
-import com.productDetails.repository.UserRepo;
-import com.productDetails.utility.JwtUtil;
+import com.productDetails.product.Product;
+import com.productDetails.user.User;
+import com.productDetails.product.ProductRepo;
+import com.productDetails.user.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

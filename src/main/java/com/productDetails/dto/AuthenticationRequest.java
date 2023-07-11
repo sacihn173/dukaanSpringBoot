@@ -1,4 +1,4 @@
-package com.productDetails.model;
+package com.productDetails.dto;
 
 public class AuthenticationRequest {
 

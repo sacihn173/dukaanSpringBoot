@@ -1,9 +1,9 @@
 package com.productDetails.controller;
 
-import com.productDetails.model.AuthenticationRequest;
-import com.productDetails.model.AuthenticationResponse;
-import com.productDetails.model.Product;
-import com.productDetails.model.User;
+import com.productDetails.dto.AuthenticationRequest;
+import com.productDetails.dto.AuthenticationResponse;
+import com.productDetails.product.Product;
+import com.productDetails.user.User;
 import com.productDetails.service.HomeServiceClass;
 import com.productDetails.service.MyUserDetailsService;
 import com.productDetails.utility.JwtUtil;
@@ -13,7 +13,6 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;

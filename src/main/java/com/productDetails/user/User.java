@@ -1,6 +1,9 @@
-package com.productDetails.model;
+package com.productDetails.user;
+
+import com.productDetails.order.Order;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "user_details")
@@ -9,10 +12,17 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int userId;
+
     private String phoneNumber;
+
     private String password;
+
     private String roles;
+
     private boolean active;
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<Order> orders;
 
     public User(User user){
         this.phoneNumber = user.getPhoneNumber();
@@ -62,5 +72,13 @@ public class User {
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
     }
 }
