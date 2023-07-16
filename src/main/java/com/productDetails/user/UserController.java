@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.lang.reflect.InvocationTargetException;
 
 @RestController
 @RequestMapping("/api/user")
@@ -23,7 +24,7 @@ public class UserController {
 
     // TODO : how to add check whether the user is updating his own data or not
     @GetMapping("/update")
-    public ResponseEntity<UserDTO> updateUser(@RequestBody @Valid UserDTO user) {
+    public ResponseEntity<UserDTO> updateUser(@RequestBody @Valid UserDTO user) throws InvocationTargetException, IllegalAccessException {
         return new ResponseEntity<UserDTO>(userService.updateUser(user), HttpStatus.OK);
     }
 

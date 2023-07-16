@@ -31,6 +31,13 @@ public class User {
         this.active = user.isActive();
     }
 
+    public User (String phoneNumber, String password) {
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+        this.active = true;
+        // assign customer role
+    }
+
     public User(){
     }
 

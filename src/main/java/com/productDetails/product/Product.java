@@ -11,9 +11,19 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int productId;
-    private int productPrice;
-    private String productCategory;
+    private Integer productId;
+
+    private Integer productPrice;
+
+    private String description;
+
+    private List<String> tags;
+
+    private Integer sales;
+
+    private Integer impressions;
+
+    private Integer rank;
 
     @OneToMany(mappedBy = "product", fetch = FetchType.LAZY)
     private List<Order> orders;
@@ -24,7 +34,6 @@ public class Product {
 
     public Product(Product product){
         this.productPrice = product.getProductPrice();
-        this.productCategory = product.getProductCategory();
     }
 
     public int getProductId() {
@@ -43,19 +52,51 @@ public class Product {
         this.productPrice = productPrice;
     }
 
-    public String getProductCategory() {
-        return productCategory;
-    }
-
-    public void setProductCategory(String productCategory) {
-        this.productCategory = productCategory;
-    }
-
     public List<Order> getOrders() {
         return orders;
     }
 
     public void setOrders(List<Order> orders) {
         this.orders = orders;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = tags;
+    }
+
+    public Integer getSales() {
+        return sales;
+    }
+
+    public void setSales(int sales) {
+        this.sales = sales;
+    }
+
+    public Integer getImpressions() {
+        return impressions;
+    }
+
+    public void setImpressions(int impressions) {
+        this.impressions = impressions;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
     }
 }

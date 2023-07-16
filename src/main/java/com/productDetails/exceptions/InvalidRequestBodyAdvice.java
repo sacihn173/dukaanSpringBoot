@@ -1,4 +1,4 @@
-package com.productDetails.advice;
+package com.productDetails.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;

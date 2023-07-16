@@ -28,7 +28,6 @@ public class HomeServiceClass {
         Product presentProduct = productRepo.findById(product.getProductId()).orElse(null);
         if(presentProduct != null){
             presentProduct.setProductPrice(product.getProductPrice());
-            presentProduct.setProductCategory(product.getProductCategory());
             productRepo.save(presentProduct);
             return "Success";
         }
