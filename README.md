@@ -29,7 +29,9 @@ Two issues are solved :
 2. **Ordering these products on make recommedation as relevant as possible**<br />
 
    Relations are build between products. A product which is more related to user bought product in given higher ranking.<br/>
-   **How are products related** <br />
+   
+   **How are products related** ? <br />
+
    For each pair of products, the count of common users who bought both the products is stored.<br/>
    Higher the number, more related the products are.
    
@@ -41,6 +43,9 @@ Two issues are solved :
    Let S be the count of users who bought both products X and B.<br/>
    If T > S, then A is more relevant product than B for the user.<br/>
    Else, B is more relevant product than A.<br/>
+
+   ![image](https://github.com/sacihn173/dukaanSpringBoot/assets/73626851/b51ab98a-de35-45cd-abc8-64dc00354f83)
+
    
    Similarily, ranking is done based on impresssions also (Sales is given more preference).<br/>
 
