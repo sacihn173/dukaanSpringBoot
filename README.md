@@ -63,8 +63,7 @@ Products are sorted based on 'total_sales' and then on 'total_impressions' and r
 
 Schema :
 
-![image](https://github.com/sacihn173/dukaanSpringBoot/assets/73626851/2064b4ec-6fd8-4f90-9d06-ad2f47c974a7)
-
+![image](https://github.com/sacihn173/dukaanSpringBoot/assets/73626851/f941ca3a-bad3-449e-9163-5d06461ea94e)
 
 
 ![image](https://github.com/sacihn173/dukaanSpringBoot/assets/73626851/38dcb938-60eb-4649-a687-2643e9528df6)
