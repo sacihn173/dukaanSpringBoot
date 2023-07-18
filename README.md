@@ -44,7 +44,8 @@ Two issues are solved :
    If T > S, then A is more relevant product than B for the user.<br/>
    Else, B is more relevant product than A.<br/>
 
-   ![image](https://github.com/sacihn173/dukaanSpringBoot/assets/73626851/b51ab98a-de35-45cd-abc8-64dc00354f83)
+   ![image](https://github.com/sacihn173/dukaanSpringBoot/assets/73626851/f25698fe-51fe-40be-8723-8161e2c397eb)
+
 
    
    Similarily, ranking is done based on impresssions also (Sales is given more preference).<br/>
