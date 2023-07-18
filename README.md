@@ -1,39 +1,35 @@
 ## Dukan
 
 A single seller - multi customer application. Functionalities related to User, Product and Order.<br />
-Functionality to generate **Relevant Products Feed Page for Customer**. 
+Functionality to generate **Relevant Products Feed Page for Customer**. <br />
 Functionality to generate **Trending Products Page**.<br />
 **Ranking Produts** based on total sales and impressions.
 
 ![image](https://github.com/sacihn173/dukaanSpringBoot/assets/73626851/cc5631c1-9f37-4d6a-b4a2-7f8b769611dc)
 
-Relevant User Feed Generation (Recommendation System) :
--
+## Relevant User Feed Generation (Recommendation System) :
+
 Tag based System is used. (Each product is assigned with some tags)   
 
 The User Feed is combination of two sections : 
-1. Trending Produts : <br />
+1. Trending Products : <br />
    Products having highest impressions and sales at that instance of time.
    
 2. Product based on User's history : <br />
-   Customer's history is stored in form of product tags (ordered and searched).<br />
-   For Feed generation request, these tags are used to get list of products.<br />
-   Products are then ranked based on 'total_sales', 'total_impressions' and 'product_rank'.<br />
-   The products are then randomly ordered (to avoid presenting same products everytime) and are served.<br />
+   User's order history is used to generate related products.<br />
 
-
-How are products related to User's History generated ? <br/>
+**How are products related to User's History generated**<br/>
 
 Two issues are solved :
 
-1. Getting products having tags similar to user's history products.<br />
+1. **Getting products having tags similar to user's history products**<br />
    
    Search is performed to filter out products having tags similar to products the user bought.
 
-2. Ordering these products on make recommedation as relevant as possible.<br />
+2. **Ordering these products on make recommedation as relevant as possible**<br />
 
    Relations are build between products. A product which is more related to user bought product in given higher ranking.<br/>
-   How are products related ? <br />
+   **How are products related** <br />
    For each pair of products, the count of common users who bought both the products is stored.<br/>
    Higher the number, more related the products are.
    
