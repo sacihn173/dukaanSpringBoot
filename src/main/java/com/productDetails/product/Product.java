@@ -1,6 +1,7 @@
 package com.productDetails.product;
 
 import com.productDetails.order.Order;
+import org.springframework.boot.context.properties.bind.DefaultValue;
 
 import javax.persistence.*;
 import java.util.List;
@@ -24,6 +25,10 @@ public class Product {
     private Integer impressions;
 
     private Integer rank;
+
+    private Integer salesInPeriod;
+
+    private Integer impressionsInPeriod;
 
     @OneToMany(mappedBy = "product", fetch = FetchType.LAZY)
     private List<Order> orders;
@@ -98,5 +103,21 @@ public class Product {
 
     public void setRank(int rank) {
         this.rank = rank;
+    }
+
+    public Integer getSalesInPeriod() {
+        return salesInPeriod;
+    }
+
+    public void setSalesInPeriod(Integer salesInPeriod) {
+        this.salesInPeriod = salesInPeriod;
+    }
+
+    public Integer getImpressionsInPeriod() {
+        return impressionsInPeriod;
+    }
+
+    public void setImpressionsInPeriod(Integer impressionsInPeriod) {
+        this.impressionsInPeriod = impressionsInPeriod;
     }
 }

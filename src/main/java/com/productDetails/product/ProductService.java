@@ -61,6 +61,7 @@ public class ProductService {
 
     @Async
     public void addSales(int productId) {
+        // TODO : add salesInPeriod also
         Product product = productRepo.findById(productId).orElse(null);
         if(product != null) {
             product.setSales( (product.getSales() != null ? product.getSales() : 0) + 1);
@@ -72,6 +73,7 @@ public class ProductService {
     @Async
     public void addImpression(int productId) {
         productRepo.addImpression(productId, 1);
+        // TODO : add impressionInPeriod also
     }
 
     /**

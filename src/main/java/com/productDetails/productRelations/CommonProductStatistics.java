@@ -2,6 +2,10 @@ package com.productDetails.productRelations;
 
 import javax.persistence.*;
 
+/**
+ * Defines relation between products in terms of common statistics like 'Sales', 'Impressions'
+ */
+
 @Entity
 @Table(name = "common_product_statistics")
 public class CommonProductStatistics {

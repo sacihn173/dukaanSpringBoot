@@ -3,6 +3,10 @@ package com.productDetails.productRelations;
 import javax.persistence.*;
 import java.util.List;
 
+/**
+ * Contains list of products corresponding to various tags
+ */
+
 @Entity
 @Table(name = "tags")
 public class TagProducts {
